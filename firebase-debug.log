@@ -1,0 +1,36 @@
+[debug] [2021-08-23T04:14:24.641Z] ----------------------------------------------------------------------
+[debug] [2021-08-23T04:14:24.644Z] Command:       /home/msteele96/.nvm/versions/node/v16.3.0/bin/node /home/msteele96/.nvm/versions/node/v16.3.0/bin/firebase serve
+[debug] [2021-08-23T04:14:24.644Z] CLI Version:   9.16.5
+[debug] [2021-08-23T04:14:24.644Z] Platform:      linux
+[debug] [2021-08-23T04:14:24.644Z] Node Version:  v16.3.0
+[debug] [2021-08-23T04:14:24.645Z] Time:          Mon Aug 23 2021 00:14:24 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-08-23T04:14:24.645Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-23T04:14:24.716Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-23T04:14:24.716Z] > authorizing via signed-in user (marcsteele2014@gmail.com)
+[debug] [2021-08-23T04:14:24.716Z] [iam] checking project marc-steele for permissions ["firebase.projects.get"]
+[debug] [2021-08-23T04:14:24.719Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/marc-steele:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-08-23T04:14:25.093Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Aug 2021 04:14:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=139","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T04:14:25.103Z] > refreshing access token with scopes: []
+[debug] [2021-08-23T04:14:25.104Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T04:14:25.318Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 23 Aug 2021 04:14:08 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T04:14:25.363Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marc-steele [none]
+[debug] [2021-08-23T04:14:25.749Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marc-steele 200
+[debug] [2021-08-23T04:14:25.749Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marc-steele {"projectId":"marc-steele","projectNumber":"589185644994","displayName":"marc-steele","name":"projects/marc-steele","resources":{"hostingSite":"marc-steele"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/mnt/c/Users/marcs/dev/marc-steele'...
+[info] 
+[debug] [2021-08-23T04:14:25.762Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/marc-steele/sites 
+[debug] [2021-08-23T04:14:26.313Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/marc-steele/sites 200
+[debug] [2021-08-23T04:14:26.313Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/marc-steele/sites {"sites":[{"name":"projects/589185644994/sites/marc-steele","defaultUrl":"https://marc-steele.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2021-08-23T04:14:26.313Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marc-steele/webApps/-/config [none]
+[debug] [2021-08-23T04:14:26.830Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marc-steele/webApps/-/config 200
+[debug] [2021-08-23T04:14:26.831Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marc-steele/webApps/-/config {"projectId":"marc-steele","storageBucket":"marc-steele.appspot.com","apiKey":"AIzaSyC2tGqkZydjc2bQSZfUkmrMnKffPNLCR6Q","authDomain":"marc-steele.firebaseapp.com","messagingSenderId":"589185644994"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [23/Aug/2021:04:14:32 +0000] "GET / HTTP/1.1" 200 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Aug/2021:04:14:32 +0000] \"GET / HTTP/1.1\" 200 70 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [23/Aug/2021:04:14:33 +0000] "GET /favicon.ico HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Aug/2021:04:14:33 +0000] \"GET /favicon.ico HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [23/Aug/2021:04:14:40 +0000] "GET /nodisplay HTTP/1.1" 404 1808 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Aug/2021:04:14:40 +0000] \"GET /nodisplay HTTP/1.1\" 404 1808 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [23/Aug/2021:04:14:49 +0000] "GET / HTTP/1.1" 200 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Aug/2021:04:14:49 +0000] \"GET / HTTP/1.1\" 200 70 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36\""}}
