@@ -1,5 +1,6 @@
 import './App.css';
 import Contact from './components/contact';
+import Project from './components/project';
 import { Route, Switch, Link } from 'react-router-dom';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
     <Link to="/">Home</Link>
     <Link to="/contact">Contact</Link>
+    <Link to="/projects">projects</Link>
 
     <Switch>
       <>
@@ -18,6 +20,10 @@ function App() {
 
       <Route exact path="/contact">
         <Contact/>
+      </Route>
+
+      <Route exact path="/projects">
+        <Project/>
       </Route>
 
       </>
