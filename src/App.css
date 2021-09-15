@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.NavBar {
+  display: block;
+  position: sticky;
+  top: 0px ;
+  background-color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

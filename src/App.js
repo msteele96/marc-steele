@@ -1,16 +1,18 @@
 import './App.css';
 import Contact from './components/contact';
-import Project from './components/project';
+import Projects from './components/projects';
 import { Route, Switch, Link } from 'react-router-dom';
 
 function App() {
   return (
   <>
-    <h1 class="App-header">React App Under Construction</h1>
+    <div class="NavBar">
+      <Link to="/">Home</Link>
+      <Link to="/contact">Contact</Link>
+      <Link to="/projects">Projects</Link>
+    </div>
 
-    <Link to="/">Home</Link>
-    <Link to="/contact">Contact</Link>
-    <Link to="/projects">projects</Link>
+    <h1 class="App-header">React App Under Construction</h1>
 
     <Switch>
       <>
@@ -23,7 +25,7 @@ function App() {
       </Route>
 
       <Route exact path="/projects">
-        <Project/>
+        <Projects/>
       </Route>
 
       </>
