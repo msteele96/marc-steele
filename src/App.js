@@ -23,7 +23,7 @@ function App() {
         
       </Route>
 
-      <Route>
+      <Route exact path="/about">
         <About/>
       </Route>
 
