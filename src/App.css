@@ -31,10 +31,13 @@
 .NavBar {
   position: sticky;
   top: 0px ;
-  background-color: white;
+  background-color: darkolivegreen;
+  line-height: 60px;
+  font-size: 20pt;
 }
 
 .NavBar ul li{
+  line-height: 60px;
   display: inline;
   margin: 5%;
 }
@@ -50,6 +53,17 @@
   width: 60%;
   font-size: 18pt;
 }
+
+.logos {
+  text-align: center;
+}
+
+#Flatiron, #Exeter, #Springfield {
+  padding: 50px;
+  height: 100px;
+  width: auto;
+}
+
 
 @keyframes App-logo-spin {
   from {
