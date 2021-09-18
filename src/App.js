@@ -14,7 +14,7 @@ function App() {
     {/* <Navbar bg="dark" variant="dark" sticky="top"> */}
       <ul>
         <li><Link to="/" style={{ textDecoration: 'none', color:'white'}}>Home</Link></li>
-        <li><Link to="/about" style={{ textDecoration: 'none', color:'white'}}>About</Link></li>
+        <li><Link to="/about" id="AboutLink" style={{ textDecoration: 'none', color:'white'}}>About</Link></li>
         <li><Link to="/projects" style={{ textDecoration: 'none', color:'white'}}>Projects</Link></li>
         <li><Link to="/contact" style={{ textDecoration: 'none', color:'white'}}>Contact</Link></li>
       </ul>
@@ -40,7 +40,7 @@ function App() {
       <Route exact path="/projects">
         <Projects/>
       </Route>
-
+      
       </>
     </Switch>
 
