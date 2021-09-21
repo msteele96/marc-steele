@@ -17,6 +17,7 @@ function App() {
         <li><Link to="/about" id="AboutLink" style={{ textDecoration: 'none', color:'white'}}>About</Link></li>
         <li><Link to="/projects" style={{ textDecoration: 'none', color:'white'}}>Projects</Link></li>
         <li><Link to="/contact" style={{ textDecoration: 'none', color:'white'}}>Contact</Link></li>
+        <li><Link to="/contact"><img id="LinkedIn-Photo" src= {process.env.PUBLIC_URL+"LinkedIn Photo.jpg"} alt="LinkedIn Profile"/></Link></li>
       </ul>
     {/* </Navbar> */}
     </div>

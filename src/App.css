@@ -35,6 +35,11 @@
   line-height: 60px;
   font-size: 20pt;
   z-index: 1;
+  /* display:flex; */
+}
+
+.NavBar ul {
+  width: 100%;
 }
 
 .NavBar ul li{
@@ -52,6 +57,12 @@
     position: absolute;
     top: 0px;
     z-index: 0;
+}
+
+#LinkedIn-Photo {
+  height: 60px;
+  width: 60px;
+  float: right;
 }
 
 #GetToKnowMe {
