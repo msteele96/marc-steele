@@ -54,7 +54,8 @@
 #GetToKnowMe {
   position: absolute;
   top: 30%;
-  left: 45%
+  left: 45%;
+  width: 10%;
 }
 
 .about-title {
@@ -70,13 +71,14 @@
 }
 
 .logos {
+  display: inline-block;
   text-align: center;
 }
 
 #Flatiron, #Exeter, #Springfield {
   padding: 50px;
-  height: 100px;
-  width: auto;
+  height: 20%;
+  width: 20%;
 }
 
 

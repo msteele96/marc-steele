@@ -18,6 +18,9 @@ export default class About extends Component {
                     <img id="Springfield" src={process.env.PUBLIC_URL + 'Springfield College Logo.png'} alt="Springfield College Logo" />
                     <img id="Flatiron" src={process.env.PUBLIC_URL + 'Flatiron_School_Logo.png'} alt="Flatiron School Logo" />
                 </div>
+                <p>
+                    {process.env.PUBLIC_URL}
+                </p>
             </>
         )
     }
